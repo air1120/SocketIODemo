@@ -90,7 +90,7 @@
         NSLog(@"%@",tip);
         [self addMessage:tip];
         NSLog(@"%@ %@",data,ask);
-        
+        [self createRoom:nil];
     }];
     
     [socket on:@"error" callback:^(NSArray * _Nonnull data, SocketAckEmitter * _Nonnull ask) {
